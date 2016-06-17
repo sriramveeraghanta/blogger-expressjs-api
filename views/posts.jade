@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .row
+          h1 Posts
+          .col-md-8
+                  each post in posts
+                      h3 #{post.username}
+                      p #{post.post}
+                      p #{post.datetime}
